@@ -1,0 +1,16 @@
+<h1>ログイン</h1>
+<ul>
+   <li ng-repeat="message in messages">
+          <p>{{message}}</p>
+   </li>
+</ul>
+
+<form name="loginForm" novalidate>
+    <span>ユーザID　：</span><input type="text" name="loginUserId" ng-model="loginUserId" required />
+    <span ng-show="loginForm.loginUserId.$error.required">※必須</span>
+    <br>
+    <span>パスワード：</span><input type="text" name="password" ng-model="password" required />
+    <span ng-show="loginForm.password.$error.required">※必須</span>
+    <br>
+    <button class="btn" ng-click="login()" ng-disabled="loginForm.$invalid">ログイン</button>
+</form>
