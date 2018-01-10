@@ -4,7 +4,7 @@
 package example.angularjavaee;
 
 /**
- * @author hitos
+ * @author 
  *
  */
 public class Hoge {
